@@ -46,7 +46,7 @@ function getRandomChar() {
   return randomCharList [Math.floor(Math.random() * randomCharList.length)];
 }
 
-console.log(getRandomChar());   
+console.log(getRandomChar()); 
 
 
 var generatePassword = function (){
