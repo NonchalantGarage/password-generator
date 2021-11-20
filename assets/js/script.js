@@ -10,6 +10,7 @@
 
 
 // function to run when generate password button is clicked 
+// returns password choices {object}
 function generatePasswordOptions() {
 
   // default value for Char Set 
@@ -80,7 +81,7 @@ function generatePasswordOptions() {
     for (let i = 0; i<confirmedCharacters.length; i++) {
       endResult[i] = confirmedCharacters[i]   
     }
-    return endResult.join(" ")
+    return endResult.join("")
   }
 
 
@@ -93,7 +94,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePasswordOptions();
+  var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
