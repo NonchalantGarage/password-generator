@@ -45,12 +45,12 @@ function generatePasswordOptions() {
 } 
 
 // make helper functions 
-  function random (choices){
+function random (choices){
     var randomIdx = Math.floor(Math.random() * choices.length); 
     var randomEl = choices[randomIdx];
     return randomEl;
 }
-  function generatePassword(){
+function generatePassword(){
     var passwordOptions = generatePasswordOptions();
     var endResult = []
     var potentialCharacters = []
@@ -82,7 +82,7 @@ function generatePasswordOptions() {
       endResult[i] = confirmedCharacters[i]   
     }
     return endResult.join("")
-  }
+}
 
 
 
