@@ -32,7 +32,7 @@ function generatePasswordOptions() {
     alert("You must select at least one character type!");
     return null
   }  
-  // Create object  
+  // Create object for properties establish Keys and Values for later use
   var passwordChoices ={
     length: length,
     hasLowerCase: hasLowerCase,
